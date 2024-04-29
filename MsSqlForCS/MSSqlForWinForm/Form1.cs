@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 
@@ -37,7 +35,6 @@ namespace MSSqlForWinForm
             command.Parameters.AddWithValue("Name", NameField.Text);
             command.Parameters.AddWithValue("Surname", SurnameField.Text);
             command.Parameters.AddWithValue("Birthday", DateField.Text);
-            //command.Parameters.AddWithValue("From", FromField.Text);
             command.Parameters.AddWithValue("Phone", PhoneField.Text);
             command.Parameters.AddWithValue("Email", EmailField.Text);
 
