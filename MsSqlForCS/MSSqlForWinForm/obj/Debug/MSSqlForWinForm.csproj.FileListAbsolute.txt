@@ -1,0 +1,12 @@
+C:\code\git\SqlC-exemple\MsSqlForCS\MSSqlForWinForm\bin\Debug\MSSqlForWinForm.exe.config
+C:\code\git\SqlC-exemple\MsSqlForCS\MSSqlForWinForm\bin\Debug\MSSqlForWinForm.exe
+C:\code\git\SqlC-exemple\MsSqlForCS\MSSqlForWinForm\bin\Debug\MSSqlForWinForm.pdb
+C:\code\git\SqlC-exemple\MsSqlForCS\MSSqlForWinForm\obj\Debug\MSSqlForWinForm.csproj.AssemblyReference.cache
+C:\code\git\SqlC-exemple\MsSqlForCS\MSSqlForWinForm\obj\Debug\MSSqlForWinForm.Properties.Resources.resources
+C:\code\git\SqlC-exemple\MsSqlForCS\MSSqlForWinForm\obj\Debug\MSSqlForWinForm.csproj.GenerateResource.cache
+C:\code\git\SqlC-exemple\MsSqlForCS\MSSqlForWinForm\obj\Debug\MSSqlForWinForm.csproj.CoreCompileInputs.cache
+C:\code\git\SqlC-exemple\MsSqlForCS\MSSqlForWinForm\obj\Debug\MSSqlForWinForm.exe
+C:\code\git\SqlC-exemple\MsSqlForCS\MSSqlForWinForm\obj\Debug\MSSqlForWinForm.pdb
+C:\code\git\SqlC-exemple\MsSqlForCS\MSSqlForWinForm\bin\Debug\TestDB.mdf
+C:\code\git\SqlC-exemple\MsSqlForCS\MSSqlForWinForm\bin\Debug\TestDB_log.ldf
+C:\code\git\SqlC-exemple\MsSqlForCS\MSSqlForWinForm\obj\Debug\MSSqlForWinForm.Form1.resources
