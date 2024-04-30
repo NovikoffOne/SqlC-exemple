@@ -50,6 +50,7 @@
             this.ProductName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.QuantityPerUnit = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.UnitPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -166,6 +167,7 @@
             this.tableLayoutPanel1.Controls.Add(this.SelectButton, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.TextBoxRow, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textBox1, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -268,6 +270,14 @@
             // 
             this.UnitPrice.Text = "UnitPrice";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(3, 381);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(778, 22);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -314,6 +324,7 @@
         private System.Windows.Forms.ColumnHeader ProductName;
         private System.Windows.Forms.ColumnHeader QuantityPerUnit;
         private System.Windows.Forms.ColumnHeader UnitPrice;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

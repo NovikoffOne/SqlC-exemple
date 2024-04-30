@@ -95,5 +95,10 @@ namespace MSSqlForWinForm
                 }
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = $"ProductName LIKE '%{textBox1.Text}%'";
+        }
     }
 }
