@@ -20,9 +20,6 @@ namespace MSSqlForWinForm
             _sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["TestDB"].ConnectionString);
 
             _sqlConnection.Open();
-
-            if(_sqlConnection.State == ConnectionState.Open)
-                MessageBox.Show("Подключено");
         }
 
         private void InsertButton_Click(object sender, EventArgs e)
@@ -39,6 +36,20 @@ namespace MSSqlForWinForm
             command.Parameters.AddWithValue("Email", EmailField.Text);
 
             MessageBox.Show($"{command.ExecuteNonQuery() > 0}");
+        }
+
+        private void SelectButton_Click(object sender, EventArgs e)
+        {
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(
+                TextBoxRow.Text,
+                _sqlConnection
+                );
+
+            DataSet dataSet = new DataSet();
+            
+            dataAdapter.Fill(dataSet);
+
+            dataGridView1.DataSource = dataSet.Tables[0];
         }
     }
 }
