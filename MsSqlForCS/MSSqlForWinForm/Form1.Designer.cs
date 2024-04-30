@@ -43,17 +43,27 @@
             this.SelectButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.TextBoxRow = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.SelectButtonToSQLDRider = new System.Windows.Forms.Button();
+            this.ProductName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.QuantityPerUnit = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.UnitPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -195,6 +205,69 @@
             this.TextBoxRow.Size = new System.Drawing.Size(780, 22);
             this.TextBoxRow.TabIndex = 2;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.tableLayoutPanel2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(792, 421);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "SqlDataRider";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.listView1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.SelectButtonToSQLDRider, 0, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(792, 421);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ProductName,
+            this.QuantityPerUnit,
+            this.UnitPrice});
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(3, 3);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(786, 372);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // SelectButtonToSQLDRider
+            // 
+            this.SelectButtonToSQLDRider.Location = new System.Drawing.Point(3, 381);
+            this.SelectButtonToSQLDRider.Name = "SelectButtonToSQLDRider";
+            this.SelectButtonToSQLDRider.Size = new System.Drawing.Size(378, 23);
+            this.SelectButtonToSQLDRider.TabIndex = 1;
+            this.SelectButtonToSQLDRider.Text = "SELECT";
+            this.SelectButtonToSQLDRider.UseVisualStyleBackColor = true;
+            this.SelectButtonToSQLDRider.Click += new System.EventHandler(this.SelectButtonToSQLDRider_Click);
+            // 
+            // ProductName
+            // 
+            this.ProductName.Text = "ProductName";
+            // 
+            // QuantityPerUnit
+            // 
+            this.QuantityPerUnit.Text = "QuantityPerUnit";
+            // 
+            // UnitPrice
+            // 
+            this.UnitPrice.Text = "UnitPrice";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -211,6 +284,8 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -232,6 +307,13 @@
         private System.Windows.Forms.Button SelectButton;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox TextBoxRow;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button SelectButtonToSQLDRider;
+        private System.Windows.Forms.ColumnHeader ProductName;
+        private System.Windows.Forms.ColumnHeader QuantityPerUnit;
+        private System.Windows.Forms.ColumnHeader UnitPrice;
     }
 }
 

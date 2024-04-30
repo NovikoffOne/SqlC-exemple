@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Net.Http.Headers;
 
 namespace MSSqlForWinForm
 {
@@ -50,6 +51,49 @@ namespace MSSqlForWinForm
             dataAdapter.Fill(dataSet);
 
             dataGridView1.DataSource = dataSet.Tables[0];
+        }
+
+        private void SelectButtonToSQLDRider_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+
+            SqlDataReader sqlDataReader = null;
+
+            try
+            {
+                SqlCommand command = new SqlCommand(
+                    "SELECT ProductName, QuantityPerUnit, UnitPrice FROM Products",
+                    _sqlConnection
+                );
+
+                sqlDataReader = command.ExecuteReader();
+
+                ListViewItem item = null;
+
+                while (sqlDataReader.Read())
+                {
+                    item = new ListViewItem(new string[]
+                    {
+                        Convert.ToString(sqlDataReader["ProductName"]),
+                        Convert.ToString(sqlDataReader["QuantityPerUnit"]),
+                        Convert.ToString(sqlDataReader["UnitPrice"]),
+                    });
+
+                    listView1.Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                if(sqlDataReader != null && !sqlDataReader.IsClosed)
+                {
+                    sqlDataReader.Close();
+                }
+            }
         }
     }
 }
